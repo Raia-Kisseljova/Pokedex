@@ -91,6 +91,7 @@ export const App = () => {
   }, [selectedType]);
 
   const searchPokemon = async () => {
+    setSelectedType('no filter')
     toggleLoader(true);
     pokedexState.setErrorMessage("");
     if (!search) {
